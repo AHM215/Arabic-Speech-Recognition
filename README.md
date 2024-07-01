@@ -31,7 +31,7 @@ cd ASR
 python train.py train.yaml
 ```
 
-4. inference
+4. Inference
 Download model CKPT from [Drive](URL) and put in ASR folder
 
 ```
