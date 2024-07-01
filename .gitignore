@@ -1,0 +1,14 @@
+data/*
+
+Tokenizer/save/
+Tokenizer/__pycache__/
+Tokenizer/.ipynb_checkpoints/
+
+LM/model_checkpoints/
+LM/__pycache__/
+LM/results/
+
+
+ASR/__pycache__/
+ASR/.ipynb_checkpoints/
+ASR/results/
