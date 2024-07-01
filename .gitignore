@@ -16,6 +16,8 @@ ASR/.ipynb_checkpoints/
 ASR/results/
 ASR/mini_librispeech_prepare.py
 ASR/inference/*.wav
+ASR/results.zip
+
 
 
 mini_librispeech_prepare.py
