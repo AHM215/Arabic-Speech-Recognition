@@ -38,6 +38,5 @@ Download model CKPT from [Drive](URL) and put in ASR folder
 cd ASR/inference
 python transcribe_wavs.py ../../data/test ../results/CRDNN_BPE_960h_LM/2602/save/CKPT+latest
 ```
-This template can help you figure out how to set speechbrain for implementing an e2e speech recognizer. However, in a real case, the system must be trained with much more data to provide acceptable performance. For a competitive recipe with more data, see for instance our recipes on LibriSpeech (https://github.com/speechbrain/speechbrain/tree/develop/recipes/LibriSpeech/ASR).
 
-[For more information, please take a look into the "ASR from scratch" tutorial](https://colab.research.google.com/drive/1aFgzrUv3udM_gNJNUoLaHIm78QHtxdIz)
+Why we use **SpeechBrain**?
