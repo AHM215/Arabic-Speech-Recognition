@@ -3,6 +3,8 @@ data/*
 Tokenizer/save/
 Tokenizer/__pycache__/
 Tokenizer/.ipynb_checkpoints/
+Tokenizer/mini_librispeech_prepare.py
+
 
 LM/model_checkpoints/
 LM/__pycache__/
@@ -12,3 +14,7 @@ LM/results/
 ASR/__pycache__/
 ASR/.ipynb_checkpoints/
 ASR/results/
+ASR/mini_librispeech_prepare.py
+
+
+mini_librispeech_prepare.py
