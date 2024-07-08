@@ -210,7 +210,7 @@ pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
         model: !ref <asr_model>
         normalizer: !ref <normalize>
     paths:
-        lm: !ref <pretrained_path>LM/results/RNNLM/save/CKPT+2024-06-25+05-56-18+00/model.ckpt
-        tokenizer: !ref <pretrained_path>Tokenizer/save/1000_unigram.model
+        lm: !ref ../LM/results/RNNLM/save/CKPT+2024-06-25+05-56-18+00/model.ckpt
+        tokenizer: !ref ../Tokenizer/save/1000_unigram.model
         model: !ref <pretrained_path>/model.ckpt
         normalizer: !ref <pretrained_path>/normalizer.ckpt

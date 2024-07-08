@@ -52,7 +52,7 @@ if __name__ == "__main__":
         run_opts={"device": str(device)}
     )
 
-        # Process each file and store the results
+    # Process each file and store the results
     results = []
     audio_files = [f for f in os.listdir(args.audio_directory) if f.endswith(".wav")]
     total_files = len(audio_files)
@@ -65,7 +65,7 @@ if __name__ == "__main__":
 
 
     # Output results to CSV
-    with open('transcription_results.csv', 'w', newline='') as csvfile:
+    with open('transcription.csv', 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['audio', 'transcript'])
         writer.writerows(results)
