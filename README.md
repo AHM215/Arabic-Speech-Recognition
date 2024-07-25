@@ -20,6 +20,9 @@ python diarization.py
 ### Inference Example
 [Kaggle](https://www.kaggle.com/code/ahm215/speechrecognition)
 
+### Inference Example
+[![Watch the video]](/ASR/output.mp4)
+
 ## Training such a system requires the following steps:
 
 1. Train a tokenizer.
