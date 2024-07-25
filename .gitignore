@@ -20,7 +20,7 @@ ASR/results.zip
 
 ASR/diarization/data/
 ASR/diarization/run/*.wav
-ASR/diarization/output/
+ASR/diarization/output/*.json
 
 
 
