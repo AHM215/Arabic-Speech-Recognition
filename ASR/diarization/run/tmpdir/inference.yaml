@@ -9,7 +9,7 @@
 # speechbrain HuggingFace repository. However, a local path pointing to a
 # directory containing the lm.ckpt and tokenizer.ckpt may also be specified
 # instead. E.g if you want to use your own LM / tokenizer.
-pretrained_path: ../../results/CRDNN_BPE_960h_LM/2602/save
+pretrained_path: ../../
 
 # Feature parameters
 sample_rate: 16000
@@ -210,7 +210,7 @@ pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
         model: !ref <asr_model>
         normalizer: !ref <normalize>
     paths:
-        lm: !ref <pretrained_path>/lm.ckpt
-        tokenizer: !ref <pretrained_path>/tokenizer.ckpt
-        model: !ref <pretrained_path>/model.ckpt
-        normalizer: !ref <pretrained_path>/normalizer.ckpt
+        lm: !ref <pretrained_path>../LM/results/RNNLM/save/CKPT+2024-06-28+07-11-53+00/model.ckpt
+        tokenizer: !ref <pretrained_path>../Tokenizer/save/1000_unigram.model
+        model: !ref <pretrained_path>results/CRDNN_BPE_960h_LM/2602/save/CKPT+2024-07-01+14-24-57+00/model.ckpt
+        normalizer: !ref <pretrained_path>results/CRDNN_BPE_960h_LM/2602/save/CKPT+2024-07-01+14-24-57+00/normalizer.ckpt
