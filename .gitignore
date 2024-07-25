@@ -18,6 +18,8 @@ ASR/mini_librispeech_prepare.py
 ASR/inference/*.wav
 ASR/results.zip
 
+./ASR/diarizatio/data/*.wav
+
 
 
 mini_librispeech_prepare.py
