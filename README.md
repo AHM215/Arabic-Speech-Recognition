@@ -2,7 +2,25 @@
 
 This is a simple speech recognizer trained on specific data.  In particular,  it implements an offline end-to-end attention-based speech recognizer.  A tokenizer is used to detect the word token to estimate. Search replies on beam search coupled with an RNN language model.
 
-Training such a system requires the following steps:
+## Inference:
+1. Inference ASR
+Download **All** model CKPT from [Drive](https://drive.google.com/drive/folders/19xoiiQH8pByVKRv3jblOnPc4nhhH6H1a?usp=sharing) and put in ASR folder
+
+```
+cd ASR/inference
+python transcribe_wavs.py ../../data/test ../results/CRDNN_BPE_960h_LM/2602/save/CKPT+2024-07-01+14-24-57+00
+```
+
+1. Inference Diarization
+
+```
+cd ASR/diarization
+python diarization.py
+```
+### Inference Example
+[Kaggle](https://www.kaggle.com/code/ahm215/speechrecognition)
+
+## Training such a system requires the following steps:
 
 1. Train a tokenizer.
 Given the training transcriptions, the tokenizers decide which word pieces allocate for training. Most atomic units are character,  the least atomic units are words.  Most of the time, it is convenient to use tokens that are something in between characters and full words.
@@ -31,13 +49,6 @@ cd ASR
 python train.py train.yaml
 ```
 
-4. Inference
-Download model CKPT from [Drive](https://drive.google.com/drive/folders/19xoiiQH8pByVKRv3jblOnPc4nhhH6H1a?usp=sharing) and put in ASR folder
-
-```
-cd ASR/inference
-python transcribe_wavs.py ../../data/test ../results/CRDNN_BPE_960h_LM/2602/save/CKPT+2024-07-01+14-24-57+00
-```
 
 ### Why This Model?
 
