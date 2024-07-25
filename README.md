@@ -11,7 +11,7 @@ cd ASR/inference
 python transcribe_wavs.py ../../data/test ../results/CRDNN_BPE_960h_LM/2602/save/CKPT+2024-07-01+14-24-57+00
 ```
 
-1. Inference Diarization
+2. Inference Diarization
 
 ```
 cd ASR/diarization
