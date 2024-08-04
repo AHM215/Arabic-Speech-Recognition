@@ -19,6 +19,7 @@ ASR/inference/*.wav
 ASR/results.zip
 
 ASR/diarization/data/
+ASR/diarization/.ipynb_checkpoints/
 ASR/diarization/run/*.wav
 ASR/diarization/output/*.json
 ASR/diarization/model/
